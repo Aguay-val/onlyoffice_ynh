@@ -205,7 +205,7 @@ cp -a ../conf/default.json /etc/onlyoffice/documentserver/default.json
 # unprotected_uris allows SSO credentials to be passed anyway.
 ynh_app_setting_set $app unprotected_uris "/"
 
-sed
+
 # Reload services
 systemctl restart nginx
 supervisorctl restart all
